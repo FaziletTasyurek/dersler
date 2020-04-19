@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	path := "C:/Users/FAZİLET/Desktop/ders/deneme2" //dosyanın yolunu kopyalayıp yapıştırıyoruz
+	path := "C:/Users/FAZİLET/Desktop/ders/denem.txt.txt" //dosyanın yolunu kopyalayıp yapıştırıyoruz
 
 	bs, err := ioutil.ReadFile(path) //dosya okuma işlemleri
 
