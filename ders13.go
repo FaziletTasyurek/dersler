@@ -2,12 +2,14 @@ package main
 
 import "fmt"
 
-func main() { //ana fonksiyon
+//ana fonksiyon
+func main() {
 
 	fmt.Println(faktoriyel(5))
 
 }
 
+//recursion fonk
 func faktoriyel(a uint) uint {
 	if a == 0 {
 		return 1
