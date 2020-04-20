@@ -12,6 +12,6 @@ func main() {
 	for a, b := range isimler { //for dizisi ile isimler dizisinde dönerken range ile a değişkenine indeksini b değişkenine ise değerini atadık
 		//range bize iki değer döndürmüş oldu
 
-		fmt.Println(a, ". index ", b)
+		fmt.Println(a,". index ", b)
 	}
 }
