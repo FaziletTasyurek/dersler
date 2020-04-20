@@ -15,7 +15,7 @@ type personeller struct {
 }
 
 func main() {
-	db, err := gorm.Open("mysql", "root:root@/deneme?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:root@/yenideneme?charset=utf8&parseTime=True&loc=Local")
 	fmt.Print(err)
 	db.AutoMigrate(&personeller{})
 	//db.DropTableIfExists(&personeller{})
