@@ -16,6 +16,7 @@ func yaz(d int) {
 }
 func main() {
 	//bu iki işlemi yapması 10sn fazla sürde ancal gorountines ile daha hızlı yapılabilir
+	//bunu fonk önüne go yazarak sağlayıp fonk eşzamanlı çağırabiliriz
 	go yaz(5)
 	yaz(5)
 }
