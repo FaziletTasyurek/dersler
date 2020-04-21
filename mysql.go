@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
@@ -15,8 +13,8 @@ type personeller struct {
 }
 
 func main() {
-	db, err := gorm.Open("mysql", "root:root@/deneme2?charset=utf8&parseTime=True&loc=Local")
-	fmt.Print(err)
+	db, _ := gorm.Open("mysql", "root:root@/deneme2?charset=utf8&parseTime=True&loc=Local")
+
 	db.AutoMigrate(&personeller{})
 	//db.DropTableIfExists(&personeller{})
 	defer db.Close()
